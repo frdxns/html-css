@@ -26,6 +26,10 @@ body h1, h2, h3{
     font-family: var(--fonttitulo);
 }
 
+body h2{
+    text-decoration: underline;
+}
+
 body p, a{
     font-family: var(--fonttexto);
 }
@@ -70,7 +74,6 @@ main{
     color: var(--cor1);
     padding: 20px;
     margin: auto;
-    height: 75vh;
     max-width: 800px;
     border-left: 5px solid var(--cor4);
     border-right:5px solid var(--cor4) ;
@@ -80,6 +83,18 @@ main h2{
     color: var(--cor4);
     font-weight: bold;
     font-size: 1.8em;
+}
+
+main img{
+    display: block;
+    width: 80vw;
+    height: auto;
+    border-radius: 10px;
+    max-width: 700px;
+    min-width: 100%;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 40px;
 }
 
 footer{
