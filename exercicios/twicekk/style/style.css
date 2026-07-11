@@ -17,6 +17,10 @@
     padding: 0;
 }
 
+html,body{
+    font-size: 16px;
+}
+
 body{
     background-color:#fac198;
     color: var(--cor3);
@@ -83,6 +87,15 @@ main h2{
     color: var(--cor4);
     font-weight: bold;
     font-size: 1.8em;
+}
+
+main p{
+    font-family: var(--fonttexto);
+    font-weight: bold;
+    color: var(--cor1);
+    padding-left: 1em;
+    font-size: clamp(1.1rem, 3vw, 1.2rem);
+    height: auto;
 }
 
 main img{
