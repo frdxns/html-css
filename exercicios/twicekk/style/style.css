@@ -3,9 +3,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&family=Slackey&display=swap');
 
 :root{
-    --cor1:#0D0D0D;
+    --cor1:#262626;
     --cor2:#F29494;
-    --cor3:#ffc499;
+    --cor3:#ffcca7;
     --cor4:#FF6999;
 
     --fonttexto: 'Saira', Arial, sans-serif;
@@ -52,6 +52,12 @@ header h1{
     padding-top: 30px;
     margin-bottom: 10px;
     text-align: center;
+    color: white;
+}
+
+header ul{
+    width: 100%;
+    margin: 0 auto;
 }
 
 header li{
@@ -67,6 +73,7 @@ header a{
     font-weight: bold;
     padding: 5px;
     border-radius: 10px 10px 0px 0px;
+    transition: 0.3s;
 }
 
 header a:hover{
@@ -96,9 +103,10 @@ main p{
     font-family: var(--fonttexto);
     font-weight: bold;
     color: var(--cor1);
-    padding-left: 1em;
     font-size: clamp(1.1rem, 3vw, 1.rem);
     height: auto;
+    line-height: 1.7rem;
+    text-align: justify;
 }
 
 main img{
