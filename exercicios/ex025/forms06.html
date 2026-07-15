@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>formularo</h1>
+
+    <form action="cadastro.php" method="post">
+
+        <div>
+            <label for="n1">Numero 1</label>
+            <input type="number" name="n1" id="n1" min="0" max="50" required oninput="soma.innerHTML = Number(n1.value) + Number(n2.value)">
+        </div>
+
+        <div>
+            <label for="n2">Numero 2</label>
+            <input type="number" name="n2" id="n2" min="0" max="50" required oninput="soma.innerHTML = Number(n1.value) + Number(n2.value)">
+        </div>
+
+        <div>
+            <label for="soma">Soma:</label>
+            <output name="soma" id="soma"></output>
+        </div>
+
+        <div>
+            <input type="submit" value="enviar">
+            <input type="reset" value="limpar">
+        </div>
+
+
+        <div>
+            <label for="num">Numero</label>
+            <input type="range" name="num" id="num" value="3" min="1" max="5" oninput="val.innerHTML = Number(num.value)">
+
+            <output id="val">3</output>
+        </div>
+
+
+        <div>
+            <label for="ano">Ano Nascimento</label>
+            <input type="number" name="ano" id="ano" min="4" max="4" oninput="idade.innerHTML = 2026 - Number(ano.value)">
+
+            <label for="idade">Sua Idade é:</label>
+            <output id="idade">0</output>
+        </div>
+
+    </form>
+</body>
+</html>

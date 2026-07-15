@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 4</title>
+
+    <style>
+        input{
+            display: block;
+        }
+
+        fieldset{
+            flex-direction: column;
+            background-color: gray;
+            color: white;
+        }
+
+        fieldset legend{
+            color: black;
+            font-weight: bold;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <form action="cadastro.php" method="POST">
+        <fieldset>
+            <legend>dados pessoais</legend>
+            <label for="nome">Nome</label>
+            <input type="text" name="nome" id="nome">
+
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email">
+
+            <label for="sexmas">Masculino</label>
+            <input type="radio" name="sexo" id="sexmas">
+            <label for="sexfem">Feminino</label>
+            <input type="radio" name="sexo" id="sexfem">
+
+            <label for="futebol">Futebol</label>
+            <input type="checkbox" name="futebol" id="futebol">
+
+            <label for="cor">Informe a Cor</label>
+            <input type="color" value="#fff" name="cor" id="cor">
+
+            <label for="nivel">Nivel</label>
+            <input type="range" min="0" max="5" value="0">
+
+            <label for="foto">Foto de Perfil</label>
+            <input type="file" name="foto" id="foto">
+        </fieldset>
+</form>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario2</title>
+
+    <style>
+        #enviar{
+            padding: 10px;
+            border-radius: 10px;
+            background-color: gray;
+            color: white;
+            border: none;
+            font-weight: bold;
+        }
+
+        #enviar:hover{
+            background-color: lightgray;
+            border:2px solid gray;
+            color: black;
+            transform: scale(105%);
+            transition: transform .5s;
+        }
+    </style>
+</head>
+<body>
+    <main>
+
+        <h1>Formulario 2</h1>
+        <form action="cadastro.php" method="POST">
+            <div class="grupoinputs">
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome">
+            </div>
+
+            <div class="grupoinputs">
+                <label for="media">Média</label>
+                <input type="number" name="media" id="media" min="0" max="10">
+            </div>
+
+            <div class="grupoinputs">
+                <label for="data">Data</label>
+                <input type="date" name="data" id="data">
+            </div>
+
+            <div class="grupoinputs">
+                <input type="submit" value="Enviar" id="enviar">
+            </div>
+        </form>
+    </main>
+</body>
+</html>
