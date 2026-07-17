@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+/* Celulares pequenos	até 480px
+Celulares	481px – 767px
+Tablets	768px – 1023px
+Laptops	1024px – 1279px
+Desktops	1280px – 1535px
+Monitores grandes	1536px+ */
+
+@media screen and (min-width: 768px) {
+
+    #burger{
+        display: none;
+    }
+
+    menu{
+        display: block;
+    }
+
+    menu li{
+        display: inline-block;
+        width: 10vw;
+    }
+
+    main{
+        width: 768px;
+    }
+}
