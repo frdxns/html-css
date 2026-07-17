@@ -1,0 +1,71 @@
+@charset "UTF-8";
+
+/*TODAS AS MEDIA QUERIES*/
+
+
+/*Celulares pequenos	até 480px
+Celulares	481px  767px
+Tablets	768px  1023px
+Desktops	1024px  1535px
+Monitores grandes	1536px+*/
+
+@media print{
+    *{
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    main{
+        border: 2px solid black;
+    }
+
+    main h1{
+        text-shadow: none;
+        color: black;
+    }
+
+    main::after{
+        content: "Impressão criada através do menorzinquente";
+    }
+
+    img#phone{display: none;}
+    img#tablet{display: none;}
+    img#print{display: block;}
+    img#pc{display: none;}
+    img#tv{display: none;}
+}
+
+@media screen and (min-width:768px) and (max-width:1024px){
+    body{
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+
+        img#phone{display: none;}
+        img#tablet{display: block;}
+        img#print{display: none;}
+        img#pc{display: none;}
+        img#tv{display: none;}
+}
+
+@media screen and (min-width:1025px) and (max-width:1535px) {
+        body{
+        background-image: url(../imagens/back-pc.jpg);
+    }
+
+        img#phone{display: none;}
+        img#tablet{display: none;}
+        img#print{display: none;}
+        img#pc{display: block;}
+        img#tv{display: none;}
+}
+
+@media screen and (min-width: 1536px){
+    body{
+        background-image: url(../imagens/back-tv.jpg);
+    }
+
+        img#phone{display: none;}
+        img#tablet{display: none;}
+        img#print{display: none;}
+        img#pc{display: none;}
+        img#tv{display: block;}
+}
