@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLEX BOX CENTRALIZADO</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            background-color: lightcoral;
+        }
+
+        main{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: lightgreen;
+            height: 100vh;
+            width: 100vw;
+            flex-flow: row wrap;
+        }
+
+        section{
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-content: flex-start;
+            align-items: center;
+            background-color: lightseagreen;
+            height: 30vh;
+            width: 20vw;
+            border-radius: 20px;
+            overflow: hidden;
+        }
+
+        .itens{
+            border: 1px solid black;
+            background-color: aquamarine;
+            padding: 30px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <div class="itens">A</div>
+            <div class="itens">B</div>
+            <div class="itens">C</div>
+        </section>
+    </main>
+</body>
+</html>
